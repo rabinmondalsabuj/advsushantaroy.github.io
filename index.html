@@ -3,118 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushanta Roy | Advocate - District & Sessions Court, Dhaka</title>
+    <title>Sushanta Roy | Advocate - Dhaka Judge Court</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary-color: #1a2a6c; --gold: #c5a059; }
-        body { font-family: 'Times New Roman', Times, serif; color: #333; }
-        .hero { background: linear-gradient(rgba(26, 42, 108, 0.9), rgba(26, 42, 108, 0.9)), url('court-bg.jpg'); color: white; padding: 100px 0; text-align: center; }
-        .navbar { background-color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .btn-primary { background-color: var(--primary-color); border: none; }
-        .section-title { color: var(--primary-color); border-bottom: 2px solid var(--gold); display: inline-block; margin-bottom: 30px; }
-        .practice-card { border: 1px solid #ddd; padding: 20px; transition: 0.3s; border-radius: 8px; }
-        .practice-card:hover { border-color: var(--gold); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .contact-info { background: #f8f9fa; padding: 40px; border-radius: 10px; }
+        :root {
+            --primary-navy: #1a2a6c;
+            --court-red: #a82323;
+            --criminal-color: #e63946; /* Vibrant Red */
+            --civil-color: #457b9d;    /* Professional Blue */
+            --family-color: #f4a261;   /* Warm Orange */
+            --property-color: #2a9d8f; /* Land Green */
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+
+        /* Navbar */
+        .navbar { background: white; border-bottom: 4px solid var(--court-red); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-link { font-weight: 600; color: var(--primary-navy) !important; text-transform: uppercase; margin-left: 15px; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 100%); color: white; padding: 80px 0; }
+        .hero-img { 
+            border: 10px solid rgba(255,255,255,0.2); 
+            border-radius: 20px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Practice Areas - Colorful & Decent */
+        .practice-section { padding: 80px 0; }
+        .area-card {
+            border: none;
+            border-radius: 15px;
+            padding: 40px 20px;
+            color: white;
+            transition: transform 0.3s ease;
+            height: 100%;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .area-card:hover { transform: translateY(-10px); color: white; }
+        .card-criminal { background: linear-gradient(45deg, #d90429, #ef233c); }
+        .card-civil { background: linear-gradient(45deg, #0077b6, #00b4d8); }
+        .card-family { background: linear-gradient(45deg, #e76f51, #f4a261); }
+        .card-property { background: linear-gradient(45deg, #2a9d8f, #264653); }
+        .area-card i { font-size: 3rem; margin-bottom: 20px; opacity: 0.9; }
+
+        /* Chamber Section */
+        .chamber-box { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .contact-icon { width: 50px; height: 50px; background: var(--court-red); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-bottom: 15px; }
+
+        /* Footer */
+        footer { background: #111; color: #aaa; padding: 40px 0; }
+        .zeekodes { color: #f4a261; font-weight: bold; text-decoration: none; }
     </style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg sticky-top navbar-light">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#" style="color: var(--primary-color);">SUSHANTA ROY <br><small style="font-size: 12px;">ADVOCATE</small></a>
+        <a class="navbar-brand" href="#">
+            <strong style="color: var(--court-red); font-size: 1.5rem;">SUSHANTA ROY</strong><br>
+            <span style="font-size: 0.8rem; color: #666; letter-spacing: 1px;">ADVOCATE | DHAKA JUDGE COURT</span>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#practice">Practice Areas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#chamber">Chamber</a></li>
+                <li class="nav-item"><a class="nav-link" href="tel:01711288398" style="color: var(--court-red) !important;"><i class="fa fa-phone me-1"></i> Call Now</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
-<header id="home" class="hero">
+<section id="home" class="hero">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 text-md-start">
-                <h1 class="display-4 fw-bold">Justice & Integrity</h1>
-                <p class="lead">Advocate Sushanta Roy provides expert legal counsel at the District & Sessions Court, Dhaka.</p>
-                <a href="tel:01711288398" class="btn btn-lg btn-warning text-dark fw-bold">Call Now: 01711288398</a>
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-3 fw-bold mb-3">Legal Excellence <br>& Reliable Justice</h1>
+                <p class="lead mb-4">Dedicated Advocate practicing at the District & Sessions Court, Dhaka. We provide high-quality legal services across Bangladesh.</p>
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                    <a href="https://wa.me/8801711288398" class="btn btn-light btn-lg px-4 fw-bold text-success"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+                    <a href="mailto:advshantoroy@gmail.com" class="btn btn-outline-light btn-lg px-4">Email Me</a>
+                </div>
             </div>
-            <div class="col-md-6">
-          <!-- Using the Google Drive direct link format -->
-                <img src="https://drive.google.com/uc?export=view&id=1OEt25ff4V2o8HVHr2k02eUom7ni3pV4I" alt="Advocate Sushanta Roy" class="img-fluid rounded hero-img">
+            <div class="col-lg-5 mt-5 mt-lg-0 text-center">
+                <!-- Direct Google Drive Preview Link -->
+                <img src="https://lh3.googleusercontent.com/d/1OEt25ff4V2o8HVHr2k02eUom7ni3pV4I" alt="Sushanta Roy Advocate" class="hero-img img-fluid">
             </div>
         </div>
     </div>
-</header>
-<!-- Practice Areas -->
-<section id="practice" class="py-5">
+</section>
+
+<!-- Colorful Practice Areas -->
+<section id="practice" class="practice-section">
     <div class="container text-center">
-        <h2 class="section-title">Practice Areas</h2>
+        <h2 class="display-5 fw-bold mb-5" style="color: var(--primary-navy);">My Practice Areas</h2>
         <div class="row g-4">
             <div class="col-md-3">
-                <div class="practice-card">
-                    <h4>Criminal Law</h4>
-                    <p>Bail matters, defense, and criminal litigation.</p>
+                <div class="area-card card-criminal">
+                    <i class="fas fa-handcuffs"></i>
+                    <h3>Criminal Law</h3>
+                    <p>Bail petition, Criminal Defense, and High Court matters.</p>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="practice-card">
-                    <h4>Civil Law</h4>
-                    <p>Contract disputes, money suits, and recovery.</p>
+                <div class="area-card card-civil">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Civil Law</h3>
+                    <p>Civil disputes, Injunctions, and Contract enforcement.</p>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="practice-card">
-                    <h4>Family Law</h4>
-                    <p>Divorce, guardianship, and inheritance issues.</p>
+                <div class="area-card card-family">
+                    <i class="fas fa-users"></i>
+                    <h3>Family Law</h3>
+                    <p>Divorce, Guardianship, and Inheritance settlements.</p>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="practice-card">
-                    <h4>Property</h4>
-                    <p>Land documentation, disputes, and registration.</p>
+                <div class="area-card card-property">
+                    <i class="fas fa-house-chimney"></i>
+                    <h3>Property</h3>
+                    <p>Land verification, Deed registration, and Title suits.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
+<!-- Chamber & Contact -->
+<section id="chamber" class="py-5 bg-white">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="section-title">Chamber Location</h2>
-                <div class="contact-info">
-                    <h5><strong>Dhaka Judge Court</strong></h5>
-                    <p>16/A, Court House Street<br>Room-405, Kotwali, Dhaka-1100</p>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-4" style="color: var(--court-red);">Visit My Chamber</h2>
+                <div class="chamber-box border border-light shadow-sm">
+                    <h4 class="fw-bold text-dark">Dhaka Judge Court</h4>
+                    <p class="text-muted">16/A, Court House Street, Room-405, Kotwali, Dhaka-1100</p>
                     <hr>
-                    <p><strong>Mobile:</strong> 01711288398, 01511288398</p>
-                    <p><strong>Email:</strong> advshantoroy@gmail.com</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+                            <h6 class="mb-0">Mobile 1</h6>
+                            <strong>01711288398</strong>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+                            <h6 class="mb-0">Mobile 2</h6>
+                            <strong>01511288398</strong>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+                            <h6 class="mb-0">Email Address</h6>
+                            <strong>advshantoroy@gmail.com</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <h2 class="section-title">Request a Consultation</h2>
-                <form>
-                    <input type="text" class="form-control mb-3" placeholder="Your Name">
-                    <input type="email" class="form-control mb-3" placeholder="Your Email">
-                    <textarea class="form-control mb-3" rows="4" placeholder="Briefly describe your case"></textarea>
-                    <button class="btn btn-primary w-100 py-2">Submit Request</button>
-                </form>
+            <div class="col-lg-6">
+                <div class="p-4 bg-light rounded shadow-sm">
+                    <h3 class="mb-4 fw-bold">Send Message</h3>
+                    <form>
+                        <input type="text" class="form-control mb-3 py-3" placeholder="Your Name">
+                        <input type="tel" class="form-control mb-3 py-3" placeholder="Phone Number">
+                        <textarea class="form-control mb-3" rows="4" placeholder="Brief details about your case..."></textarea>
+                        <button class="btn btn-danger w-100 py-3 fw-bold">REQUEST CONSULTATION</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2023 Sushanta Roy, Advocate. All Rights Reserved.</p>
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-2">© 2023 Sushanta Roy, Advocate. All Rights Reserved.</p>
+        <p class="small">Created with <a href="#" class="zeekodes">Zeekodes</a></p>
+    </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
