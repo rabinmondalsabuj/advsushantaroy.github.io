@@ -210,10 +210,9 @@
     <div class="container">
         <div class="mb-4">
             <h4 class="fw-bold text-white">ADVOCATE SUSHANTA ROY</h4>
-            <p>Providing trusted legal solutions since 2014.</p>
         </div>
         <hr style="border-color: #333;">
-        <p class="mb-0 text-muted">© 2023 All Rights Reserved.</p>
+        <p class="mb-0 text-muted">© 2026 All Rights Reserved.</p>
         <p class="mt-2">Created with <a href="#" class="zeekodes-link">Zeekodes</a></p>
     </div>
 </footer>
